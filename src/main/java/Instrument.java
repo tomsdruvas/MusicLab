@@ -1,9 +1,9 @@
-public abstract class Instrument{
+public abstract class Instrument implements ISell{
     private String name;
-    private int buyPrice;
-    private int sellPrice;
+    private double buyPrice;
+    private double sellPrice;
 
-    public Instrument(String name, int buyPrice, int sellPrice) {
+    public Instrument(String name, double buyPrice, double sellPrice) {
         this.name = name;
         this.buyPrice = buyPrice;
         this.sellPrice = sellPrice;
@@ -13,11 +13,11 @@ public abstract class Instrument{
         return name;
     }
 
-    public int getBuyPrice() {
+    public double getBuyPrice() {
         return buyPrice;
     }
 
-    public int getSellPrice() {
+    public double getSellPrice() {
         return sellPrice;
     }
 

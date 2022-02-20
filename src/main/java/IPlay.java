@@ -1,5 +1,4 @@
 public interface IPlay {
 
-    public default void play(){
-    }
+    String playMusic(Instrument instrument);
 }

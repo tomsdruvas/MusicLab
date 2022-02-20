@@ -8,6 +8,11 @@ public class Piano extends Instrument{
 
     @Override
     public double calcMarkUp(Instrument instrument) {
-        return instrument.getBuyPrice() - instrument.getSellPrice();
+        return instrument.getSellPrice() - instrument.getBuyPrice();
+    }
+
+    @Override
+    public String playMusic(Instrument instrument) {
+        return this.getName() + " is making piano sounds";
     }
 }
